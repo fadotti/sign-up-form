@@ -5,11 +5,14 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Sign-up Form</title>
   <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
   <style>
     @font-face {
         font-family: 'Norse';
-        src: url('Norse-Bold.woff2') format('woff2'),
-             url('Norse-Bold.woff') format('woff');
+        src: url('assets/Norse-Bold.woff2') format('woff2'),
+             url('assets/Norse-Bold.woff') format('woff');
         font-weight: bold;
         font-style: normal;
         font-display: block;
@@ -19,9 +22,28 @@
 <body>
   <div id="body">
     <div id="image-section">
+      <div id="odin-banner">
+        <img src="assets/odin-lined.png" alt="">
+        <div>ODIN</div>
+      </div>
+      <div id="photo-credit">
+        <div id="photo-credit-flex">
+          Photo by &nbsp;<a href="https://unsplash.com/@alissaschh?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash"> Alissa Schilling</a>&nbsp; on &nbsp;
+          <a href="https://unsplash.com/photos/charming-european-street-with-stone-buildings-and-plants-KBg73gZF2Wo?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Unsplash</a>
+        </div>
+      </div>
     </div>
 
     <div id="main-section">
+      <div id="form-header">
+        <p>This is not a real online service! You know you need something like 
+        this in your life to help you realize your deepest dreams. <br> Sign up <em>now</em> to get started.</p>
+        <p>You <em>know</em> you want to.</p>
+      </div>
+      <form action="">
+        <div id="form-section"></div>
+        <div id="submit-section"></div>
+      </form>
     </div>
   </div>
 </body>

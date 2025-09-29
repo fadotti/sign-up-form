@@ -17,10 +17,74 @@ body {
   background-size: contain;
   height: 100vh;
   width: var(--image-width-over-height);
+  display: flex;
+  flex-direction: column;
 }
 
 #main-section {
   background-color: #F6EAD4;
   height: 100vh;
-  width: 80vh;
+  width: 100vh;
+}
+
+#odin-banner {
+  height: 15vh;
+  background-color: rgba(0, 0, 0, 0.45);
+  position: relative;
+  top: 25.5%;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 11vh;
+  font-family: 'Norse';
+  font-weight: bold;
+  font-style: normal;
+}
+
+img {
+  height: 13vh;
+}
+
+#photo-credit {
+  position: absolute;
+  bottom: 1%;
+  width: var(--image-width-over-height);
+  color: white;
+  font-size: 1.6vh;
+}
+
+#photo-credit-flex {
+  display: flex;
+  justify-content: center;
+}
+
+#photo-credit-flex > a {
+  color: white;
+}
+
+#photo-credit-flex > a:hover {
+  text-decoration: none;
+  color: red;
+}
+
+#main-section {
+  font-family: "Montserrat", sans-serif;
+}
+
+#form-header {
+  height: 15vh;
+  font-size: 2.7vh;
+  font-weight: 600;
+  margin: 7vh 5vh;
+}
+
+#form-section {
+  background-color: white;
+  height: 35vh;
+  box-shadow: 0px 5px 5px 0px rgba(198, 198, 198, 0.30);
+}
+
+#submit-section {
+  height: 40vh;
 }
