@@ -1,5 +1,9 @@
 :root {
   --image-width-over-height: calc(calc(3456vh / 5184) * 100);
+  --left-padding: 5vh;
+  --left-margin-2nd-column: 7vh;
+  --large-font-size: 2.7vh;
+  --font-weight-large: 600;
 }
 
 body {
@@ -74,17 +78,33 @@ img {
 
 #form-header {
   height: 15vh;
-  font-size: 2.7vh;
-  font-weight: 600;
-  margin: 7vh 5vh;
+  font-size: var(--large-font-size);
+  font-weight: var(--font-weight-large);
+  margin: 7vh var(--left-padding);
 }
 
 #form-section {
   background-color: white;
   height: 35vh;
-  box-shadow: 0px 5px 5px 0px rgba(198, 198, 198, 0.30);
+  box-shadow: 0px 2px 5px 3px rgba(198, 198, 198, 0.30);
+  clip-path: inset(-15% 0% -15% 0%);
+  padding-left: var(--left-padding);
 }
 
 #submit-section {
   height: 40vh;
+}
+
+#form {
+  display: flex;
+}
+
+#form-column-2 {
+  margin-left: var(--left-margin-2nd-column);
+}
+
+#form-welcome {
+  font-size: var(--large-font-size);
+  font-weight: var(--font-weight-large);
+  padding: 2.5vh 0;
 }
