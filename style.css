@@ -1,9 +1,11 @@
 :root {
   --image-width-over-height: calc(calc(3456vh / 5184) * 100);
-  --left-padding: 5vh;
-  --left-margin-2nd-column: 7vh;
+  --left-padding: 6vh;
+  --left-margin-2nd-column: 13vh;
   --large-font-size: 2.7vh;
   --font-weight-large: 600;
+  --input-label-font-size: 1.3vh;
+  overflow: hidden;
 }
 
 body {
@@ -97,6 +99,14 @@ img {
 
 #form {
   display: flex;
+  height: 60%;
+}
+
+#form > div {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  gap: 3vh;
 }
 
 #form-column-2 {
@@ -107,4 +117,61 @@ img {
   font-size: var(--large-font-size);
   font-weight: var(--font-weight-large);
   padding: 2.5vh 0;
+}
+
+label {
+  font-size: var(--input-label-font-size);
+  font-weight: 600;
+  color: #4d4d4d;
+}
+
+input {
+  border-radius: 3px;
+  border-color: #a3a3a3; /*#a3a3a3*/
+  border-style: solid;
+  height: 2vh;
+  width: 25vh;
+}
+
+input:hover {
+  background-color: #f2f2f2;
+}
+
+input:focus {
+  border-color: cornflowerblue; /*darkcyan*/
+  outline: none;
+  background-color: white;
+  box-shadow: 0px 2px 5px 3px rgba(198, 198, 198, 0.30);
+}
+
+#submit-section {
+  padding-left: var(--left-padding);
+  margin-top: 3vh;
+}
+
+button {
+  height: 5vh;
+  width: 22vh;
+  font-size: 1.7vh;
+  font-weight: 700;
+  box-shadow: 0px 2px 5px 3px rgba(198, 198, 198, 0.30);
+  border-radius: 10px;
+  border-style: none;
+  color: white;
+  background-color: #C7D25C;
+  margin-bottom: 3vh;
+}
+
+button:hover {
+  background-color: #394320;
+  box-shadow: 0px 5px 5px 3px rgba(159, 159, 159, 0.3);
+}
+
+#submit-section > div {
+  font-weight: 500;
+}
+
+#login {
+  color: #394320;
+  text-decoration: none;
 }
