@@ -42,16 +42,18 @@
       </div>
       <form action="">
         <div id="form-section">
-          <div id="form-welcome">Let's do this!</div>
+          <div id="form-welcome">Let's do this! <br>
+             <span style="font-size: 1.3vh; font-weight: 300;"> * denotes a required field</span>
+          </div>
           <div id="form">
             <div id="form-column-1">
               <label for="first-name">FIRST NAME</label>
               <input type="text" id="first-name" placeholder="John" pattern="[A-Z][a-z]*" maxlength="30">             
 
-              <label for="email">EMAIL</label>
+              <label for="email">EMAIL *</label>
               <input type="email" id="email" placeholder="johnwells9911@gmail.com" required>          
 
-              <label for="password">PASSWORD</label>
+              <label for="password">PASSWORD *</label>
               <input type="password" id="password" pattern="^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[^A-Za-z0-9]).{4,16}$" required
               maxlength="50">
               
@@ -63,7 +65,7 @@
               <label for="phone-number">PHONE NUMBER</label>
               <input type="text" id="phone-number" placeholder="3516-424099" pattern="^\d{4}-\d{6}$">
             
-              <label for="password-confirmation">CONFIRM PASSWORD</label>
+              <label for="password-confirmation">CONFIRM PASSWORD *</label>
               <input type="password" id="password-confirmation" pattern="^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[^A-Za-z0-9]).{4,16}$" 
               required maxlength="50">
               
