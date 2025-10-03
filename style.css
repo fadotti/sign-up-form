@@ -109,6 +109,10 @@ img {
   gap: 3vh;
 }
 
+#form > div > label {
+  margin-bottom: -3vh;
+}
+
 #form-column-2 {
   margin-left: var(--left-margin-2nd-column);
 }
@@ -137,11 +141,54 @@ input:hover {
   background-color: #f2f2f2;
 }
 
+input:invalid {
+  border-color: red;
+  outline: none;
+}
+
+input:valid {
+  border-color: #C7D25C;
+  outline: none;
+}
+
 input:focus {
   border-color: cornflowerblue; /*darkcyan*/
   outline: none;
   background-color: white;
   box-shadow: 0px 2px 5px 3px rgba(198, 198, 198, 0.30);
+}
+
+label:has(+ input[id*="name"]:focus:invalid)::after {
+  content: "First and last names must begin with an \A upper case letter followed by lower case \A letters";
+  position: absolute;
+  white-space: pre;
+  background-color: red;
+  color: white;
+  border-radius: 5px;
+  opacity: 0.8;
+  padding: 0.5vh;
+}
+
+label:has(+ input[id="phone-number"]:focus:invalid)::after {
+  content: "Phone numbers must have the following \A format: 3516-424099";
+  position: absolute;
+  white-space: pre;
+  background-color: red;
+  color: white;
+  border-radius: 5px;
+  opacity: 0.8;
+  padding: 0.5vh;
+}
+
+label:has(+ input[id*="password"]:focus:invalid)::after {
+  content: "Passwords must satisfy the following: \A -Have a length of 4 to 16 symbols \A -Contain an upper-case letter \A -Contain a lower-case letter \A -Contain a number \A -Contain a special symbol";
+  position: absolute;
+  white-space: pre;
+  background-color: red;
+  color: white;
+  border-radius: 5px;
+  opacity: 0.8;
+  padding: 0.5vh;
 }
 
 #submit-section {
@@ -165,6 +212,7 @@ button {
 button:hover {
   background-color: #394320;
   box-shadow: 0px 5px 5px 3px rgba(159, 159, 159, 0.3);
+  cursor: pointer;
 }
 
 #submit-section > div {
